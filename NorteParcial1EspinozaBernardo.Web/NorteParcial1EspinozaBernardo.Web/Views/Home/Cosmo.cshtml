@@ -1,17 +1,69 @@
-﻿
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Cosmo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - UAI</title>
+    <link href="~/Content/site.css" rel="stylesheet" />
+    <script src="~/Js/JavaScript.js"></script>
+
 </head>
 <body>
-    <div> 
+    <div id="container">
+        <header>
+
+            <nav>
+
+                <h3>Nueva constelacion</h3>
+
+            </nav>
+        </header>
+        <section>
+            <article>
+                <hr />
+                <div>
+
+                    <table border="0">
+                        <tr>
+                            <th>Nombre</th>
+                            <td>
+                                <input id="txtNombre" type="text" placeholder="Ingrese nombre de constelacion" />
+                            </td>
+                            <th>Siglo</th>
+                            <td>
+                                <input id="txtSiglo" type="number" placeholder="Ingrese siglo de descubrimiento" />
+                            </td>
+                        </tr>
+                        <tr>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>
+                                <input id="btnSave" type="button" value="Grabar" class="button-success color-success" />
+                                <input id="btnList" type="button" value="Listar constelaciones" class="button-default color-default" />
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+                <hr/>
+
+
+            </article>
+        </section>
+
+        <aside id="pub">
+            <article>
+                <div>
+                    <ul>
+                        <li><a href="~/Home/Index">Pagina principal</a> </li>
+                    </ul>
+                </div>
+            </article>
+        </aside>
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Norte Espinoza Bernardo| Parcial 1</p>
+        </footer>
     </div>
 </body>
 </html>
