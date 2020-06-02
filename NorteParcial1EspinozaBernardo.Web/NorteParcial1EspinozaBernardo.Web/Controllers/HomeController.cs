@@ -13,5 +13,9 @@ namespace NorteParcial1EspinozaBernardo.Web.Controllers
         {
             return View();
         }
+        public ActionResult Cosmo()
+        {
+            return View();
+        }
     }
 }
